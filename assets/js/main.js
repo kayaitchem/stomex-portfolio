@@ -118,7 +118,7 @@ const PROJECTS = [
     title: 'Modern Farmhouse',
     sub: 'Dom · nowoczesna wieś',
     lead: 'Orzechowe fronty, marmur, drewniane schody i kominek z niszą na drewno.',
-    short: 'Dom z kuchnią w klasycznych frontach i dużymi oknami na łąki.',
+    short: 'Dom z kuchnią w klasycznych frontach, dużą ilością przeszklenia i retro dodatkami.',
     tags: ['Dom', 'Farmhouse', 'Orzech', 'Marmur'],
     desc: [
       'Kuchnia ma fronty frezowane w orzechu i wyspę ze spieku z imitacją marmuru. Nad wyspą wiszą szklane lampy.',
