@@ -250,6 +250,9 @@ body::after {
 .step__media { aspect-ratio: 4 / 3; overflow: hidden; background: var(--bg-3); position: relative; }
 .step__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .step:hover .step__media img { transform: scale(1.05); }
+.step__media--fit { background: var(--bg-3); border: 1px solid var(--line); }
+.step__media--fit img { object-fit: contain; padding: 14px; }
+.step:hover .step__media--fit img { transform: none; }
 .step__media--type { display: grid; place-items: center; color: var(--accent); border: 1px solid var(--line); background: radial-gradient(120% 90% at 30% 20%, #2a2520 0%, var(--bg-3) 60%); }
 .step__svg { width: 82%; height: auto; }
 .step__svg path, .step__svg circle { stroke-dasharray: 900; stroke-dashoffset: 900; }

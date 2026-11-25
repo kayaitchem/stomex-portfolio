@@ -4,8 +4,8 @@
 
 /* ---------- USTAWIENIA DO UZUPEŁNIENIA ---------- */
 const CONTACT = {
-  email: 'kontakt@stomex.pl',   // ← wpisz prawdziwy adres
-  phone: '+48 000 000 000',     // ← wpisz prawdziwy numer
+  email: 'stomex.studio@gmail.com',
+  phone: '+48 790 422 020',
 };
 // Opcjonalny klip w tle hero, np. animacja renderu z Higgsfield: 'assets/video/hero.mp4'
 const HERO_VIDEO = null;
@@ -13,25 +13,25 @@ const HERO_VIDEO = null;
 /* ---------- PROJEKTY ---------- */
 const PROJECTS = [
   {
-    id: 'orzech-bordo', dir: 'p1', n: 16,
+    id: 'orzech-bordo', dir: 'p1', n: 17,
     title: 'Orzech & Bordo',
     sub: 'Mieszkanie · ciepły minimalizm',
     lead: 'Ciemny orzech, jasny kamień i trochę bordo w dodatkach.',
     short: 'Mieszkanie z otwartą kuchnią, sypialnią z biurkiem, pokojem dziecka i łazienką.',
-    tags: ['Mieszkanie', 'Projekt kompleksowy', 'Orzech', 'Spiek'],
+    tags: ['Mieszkanie', 'Projekt kompleksowy', 'Orzech', 'Bordo'],
     desc: [
-      'W strefie dziennej jest dużo orzecha: fronty kuchni, lamele na ścianie, stół. Żeby nie zrobiło się ciężko, ściany zostały jasne, a blaty i wyspa są ze spieku z rysunkiem marmuru. Bordo pojawia się tylko w dodatkach, czyli w poduszkach, pledzie i kwiatach.',
+      'W strefie dziennej jest dużo orzecha: fronty kuchni, lamele na ścianie, stół. Żeby nie zrobiło się ciężko, ściany zostały jasne, a blaty i półwysep są z imitacji marmuru. Bordo pojawia się tylko w dodatkach, czyli w poduszkach, pledzie i kwiatach.',
       'Lamele mają ukryte podświetlenie. Okrągły stół stoi między kuchnią a sofą, więc jadalnia nie odcina salonu od reszty.',
-      'W łazience jest owalne lustro z podświetleniem i ażurowa zabudowa. Pokój dziecka jest jaśniejszy. Ma wezgłowie w kształcie chmur, lampki-chmurki na ścianie i półki na książki.',
+      'W łazience jest owalne lustro z podświetleniem i ażurowa zabudowa. Pokój dziecka jest jaśniejszy. Ma łóżko w kształcie chmur, lampki-chmurki na ścianie i półki na książki.',
+      'Sypialnia zaś łączy w sobie kolory drewna i kremów. Jest spokojną, otulającą przestrzenią, z miejscem na biurko.',
     ],
     meta: [
       ['Typ', 'Mieszkanie'],
       ['Pomieszczenia', 'Salon z aneksem, sypialnia z biurem, pokój dziecięcy, łazienka, przedpokój'],
-      ['Materiały', 'Fornir orzechowy, lamele, spiek kwarcowy, len, mosiądz'],
-      ['Zakres', 'Moodboardy, model 3D, 26 wizualizacji, 60 widoków 3D, rysunki techniczne, lista zakupowa'],
+      ['Materiały', 'Fornir orzechowy, lamele, laminat z imitacją marmuru, kamienne płytki, brąz szczotkowany'],
+      ['Powierzchnia', '54 m²'],
     ],
-    palette: [['#4a2f22', 'Orzech'], ['#e8e0d4', 'Kość słoniowa'], ['#d9d2c7', 'Calacatta'], ['#7a1f2e', 'Bordo'], ['#b08d5e', 'Mosiądz']],
-    labels: ['Strefa dzienna', 'Salon z jadalnią', 'Kuchnia', 'Jadalnia', 'Kuchnia z jadalnią', 'Salon', 'Ściana RTV', 'Kuchnia', 'Kuchnia', 'Łazienka', 'Łazienka', 'Sypialnia', 'Sypialnia: strefa pracy', 'Pokój dziecięcy', 'Pokój dziecięcy', 'Pokój dziecięcy'],
+    labels: ['Strefa dzienna', 'Salon z jadalnią', 'Kuchnia', 'Jadalnia', 'Kuchnia z jadalnią', 'Salon', 'Ściana RTV', 'Kuchnia', 'Łazienka', 'Łazienka', 'Łazienka', 'Sypialnia', 'Sypialnia: strefa pracy', 'Pokój dziecięcy', 'Pokój dziecięcy', 'Pokój dziecięcy', 'Przedpokój'],
   },
   {
     id: 'jasne-poddasze', dir: 'p2', n: 16,
@@ -41,18 +41,17 @@ const PROJECTS = [
     short: 'Kuchnia z salonem, sypialnia, łazienka na poddaszu i dwa pokoje dla dzieci.',
     tags: ['Dom', 'Poddasze', 'Dąb', 'Pokoje dziecięce'],
     desc: [
-      'Prawie wszystko jest tu pod skosem, więc większość szaf i zabudów zaprojektowaliśmy na wymiar. Wzdłuż sufitu biegną linie LED, które pokazują jego kształt.',
-      'W kuchni stoi kamienna wyspa z blatem schodzącym do podłogi. Nad nią wisi lampa z zawijanej, świecącej linii. Za stołem jest tapeta z drzewami.',
-      'Pokój dziewczynki jest różowy, z toaletką i lampką w kształcie chmury. W pokoju chłopca są grafity i biel, biurko pod oknem dachowym i komoda na modele motocykli. W łazience na poddaszu zestawiliśmy drewno z mocno użyłowanym kamieniem.',
+      'Prawie wszystko jest tu pod skosem, a mimo to większość szaf i zabudów jest z marketów, bez konieczności zamawiania ich na wymiar. Wzdłuż sufitu biegną linie LED, które pokazują jego kształt.',
+      'W kuchni stoi kamienna wyspa z blatem schodzącym do podłogi. Nad nią wisi dekoracyjna lampa. Za stołem jest tapeta ścienna.',
+      'Pokój dziewczynki jest różowy, z toaletką i lampką w kształcie chmury. Znajduje się tam także przestrzeń kreatywna dla pasjonatki klocków lego. W pokoju chłopca są grafity i biel, biurko pod oknem dachowym i komoda na modele motocykli. W łazience na poddaszu zestawiliśmy drewno z mocno kontrastowym kamieniem.',
     ],
     meta: [
       ['Typ', 'Dom jednorodzinny'],
       ['Pomieszczenia', 'Salon z kuchnią, przedpokój, sypialnia, łazienka, pokój chłopca, pokój dziewczynki, pralnia'],
-      ['Materiały', 'Dąb naturalny, kamień, spiek, tapeta botaniczna, LED liniowy'],
-      ['Zakres', 'Model 3D, 37 wizualizacji, 68 widoków 3D, rysunki techniczne'],
+      ['Materiały', 'Dąb naturalny, kamień, tapeta ścienna, LED liniowy'],
+      ['Powierzchnia', '100 m²'],
     ],
-    palette: [['#c79a6b', 'Dąb'], ['#f1ece4', 'Biel ciepła'], ['#a8a39a', 'Kamień'], ['#2f2d2b', 'Grafit'], ['#d7a4a0', 'Pudrowy róż']],
-    labels: ['Kuchnia z wyspą', 'Kuchnia', 'Salon', 'Strefa wypoczynku', 'Strefa dzienna', 'Przedpokój', 'Kuchnia', 'Sypialnia', 'Sypialnia', 'Łazienka', 'Łazienka', 'Łazienka', 'Pokój dziewczynki', 'Pokój dziewczynki', 'Pokój chłopca', 'Pokój chłopca'],
+    labels: ['Kuchnia z wyspą', 'Kuchnia', 'Salon', 'Strefa wypoczynku', 'Strefa dzienna', 'Przedpokój', 'Kuchnia', 'Sypialnia', 'Pokój dziewczynki', 'Łazienka', 'Pokój dziewczynki', 'Łazienka', 'Pokój dziewczynki', 'Pokój dziewczynki', 'Pokój chłopca', 'Pokój chłopca'],
   },
   {
     id: 'black-edition', dir: 'p3', n: 12,
@@ -70,73 +69,69 @@ const PROJECTS = [
       ['Typ', 'Mieszkanie'],
       ['Pomieszczenia', 'Salon z kuchnią, przedpokój, sypialnia z garderobą, łazienka'],
       ['Materiały', 'Czarny marmur, lamele, kamień dekoracyjny, skóra, szkło w ramach'],
-      ['Zakres', 'Model 3D, 17 wizualizacji, 25 widoków 3D, rysunki techniczne'],
+      ['Powierzchnia', '37 m²'],
     ],
-    palette: [['#121212', 'Czerń'], ['#2c2a28', 'Antracyt'], ['#5b5650', 'Kamień'], ['#8a5a3b', 'Drewno'], ['#d9b98a', 'Światło 2700K']],
     labels: ['Kuchnia', 'Salon', 'Kuchnia', 'Salon z biokominkiem', 'Kuchnia', 'Przedpokój', 'Sypialnia', 'Garderoba', 'Sypialnia', 'Łazienka', 'Łazienka', 'Salon'],
   },
   {
-    id: 'boho', dir: 'boho', n: 12,
+    id: 'boho', dir: 'boho', n: 16,
     title: 'Dom Boho',
-    sub: 'Dom · boho z widokiem na pola',
+    sub: 'Dom · rustykalne akcenty',
     lead: 'Rattan, len, parkiet w jodełkę i kominek w salonie.',
-    short: 'Dom z dużymi oknami na pola. Boho, ale bez nadmiaru dekoracji.',
+    short: 'Dom w stylu boho z rustykalnymi dodatkami, bez nadmiaru dekoracji.',
     tags: ['Dom', 'Boho', 'Rattan', 'Kominek'],
     desc: [
       'Kuchnia jest biała, z drewnianymi blatami i wyspą. Nad stołem wiszą rattanowe lampy, a na podłodze leży parkiet w jodełkę.',
-      'W salonie jest narożny kominek w białej obudowie. Za dużymi oknami są pola, dlatego zostawiliśmy je prawie odsłonięte, tylko z lekkimi firanami.',
-      'W sypialni przeważają len i plecionki. W łazience nad umywalką zrobiliśmy łuk z drewnianych lameli.',
+      'W salonie jest narożny kominek w białej obudowie. W tym wnętrzu królują rustykalne dodatki.',
+      'W sypialni przeważają len i plecionki. W łazience postawiono na prostotę, połączenie drewna i płytek z imitacją kamienia.',
     ],
     meta: [
       ['Typ', 'Dom jednorodzinny'],
       ['Pomieszczenia', 'Salon, kuchnia, jadalnia, sypialnie, łazienki, wiatrołap, kotłownia'],
-      ['Materiały', 'Dąb, rattan, len, parkiet w jodełkę, płytki rzemieślnicze'],
-      ['Zakres', 'Model 3D, 24 wizualizacje'],
+      ['Materiały', 'Dąb, rattan, len, parkiet w jodełkę, płytki z imitacją kamienia'],
+      ['Powierzchnia', '78 m²'],
     ],
-    palette: [['#c8a274', 'Rattan'], ['#f3eee6', 'Len'], ['#8c6a4a', 'Dąb'], ['#7f8467', 'Oliwka'], ['#5a4636', 'Ziemia']],
-    labels: ['Salon', 'Kuchnia z wyspą', 'Kuchnia z kominkiem', 'Jadalnia', 'Sypialnia', 'Jadalnia', 'Salon', 'Sypialnia', 'Łazienka', 'Łazienka', 'Wiatrołap', 'Salon'],
+    labels: ['Salon', 'Kuchnia z wyspą', 'Kuchnia z kominkiem', 'Jadalnia', 'Sypialnia', 'Jadalnia', 'Salon', 'Łazienka', 'Łazienka', 'Łazienka', 'Wiatrołap', 'Salon', 'Łazienka na poddaszu', 'Łazienka', 'Łazienka na poddaszu', 'Łazienka na poddaszu'],
   },
   {
     id: 'modern-classic', dir: 'mc', n: 12,
     title: 'Modern Classic',
     sub: 'Mieszkanie · ponadczasowa klasyka',
-    lead: 'Ciepły dąb, beże i dużo podświetleń LED.',
-    short: 'Mieszkanie z lamelami przy ścianie RTV, okrągłym stołem i owalnymi lustrami w łazienkach.',
-    tags: ['Mieszkanie', 'Modern classic', 'Dąb', 'Lamele'],
+    lead: 'Ciepły orzech, beże i dużo podświetleń LED.',
+    short: 'Mieszkanie z lamelami przy ścianie RTV, okrągłym stołem i owalnym lustrem w łazience.',
+    tags: ['Mieszkanie', 'Modern classic', 'Orzech', 'Lamele'],
     desc: [
-      'Kolory są spokojne: beż, piasek i dąb. Czerń pojawia się tylko w armaturze, uchwytach i lampach.',
-      'Ścianę z telewizorem z obu stron zamykają podświetlone lamele. W jadalni stoi okrągły stół, a kuchnia ma dębowe fronty i jasny blat.',
-      'W łazienkach powtarzają się owalne lustra z podświetleniem, drewniane szafki i duże płyty w kolorze piasku.',
+      'Kolory są spokojne: beż, piasek i orzech. Czerń pojawia się tylko w armaturze, uchwytach i lampach.',
+      'Ścianę z telewizorem z obu stron zamykają podświetlone lamele. W jadalni stoi okrągły stół, a kuchnia ma fronty w kolorze orzechu i jasny blat.',
+      'W łazience pojawia się owalne lustro z podświetleniem, drewniane szafki i duże płyty w kolorze piaskowym.',
     ],
     meta: [
       ['Typ', 'Mieszkanie'],
-      ['Pomieszczenia', 'Salon z kuchnią i jadalnią, przedpokój, łazienki'],
-      ['Materiały', 'Dąb, lamele, spiek, płyty wielkoformatowe, czarna armatura'],
-      ['Zakres', 'Model 3D, 25 wizualizacji'],
+      ['Pomieszczenia', 'Salon z kuchnią i jadalnią, przedpokój, łazienka'],
+      ['Materiały', 'Orzech, lamele, imitacja kamienia, czarna armatura, światło LED'],
+      ['Powierzchnia', '34 m²'],
     ],
-    palette: [['#a87545', 'Dąb'], ['#efe7dc', 'Beż'], ['#d8cbb8', 'Piasek'], ['#1d1c1a', 'Czerń'], ['#f6d9a8', 'Ciepłe światło']],
     labels: ['Jadalnia', 'Salon', 'Strefa dzienna', 'Jadalnia', 'Jadalnia', 'Kuchnia', 'Przedpokój', 'Łazienka', 'Łazienka', 'Łazienka', 'Salon z kuchnią', 'Łazienka'],
   },
   {
-    id: 'modern-farmhouse', dir: 'mf', n: 12,
+    id: 'modern-farmhouse', dir: 'mf', n: 18,
     title: 'Modern Farmhouse',
     sub: 'Dom · nowoczesna wieś',
     lead: 'Orzechowe fronty, marmur, drewniane schody i kominek z niszą na drewno.',
     short: 'Dom z kuchnią w klasycznych frontach i dużymi oknami na łąki.',
     tags: ['Dom', 'Farmhouse', 'Orzech', 'Marmur'],
     desc: [
-      'Kuchnia ma fronty ramiakowe w orzechu i wyspę z marmuru. Nad wyspą wiszą szklane lampy.',
+      'Kuchnia ma fronty frezowane w orzechu i wyspę ze spieku z imitacją marmuru. Nad wyspą wiszą szklane lampy.',
       'Duży stół stoi przy oknach, obok jest biblioteczka. Z holu z kominkiem drewniane schody prowadzą na poddasze.',
-      'W łazienkach jest marmur i mosiężna armatura. W jednej powiesiliśmy dwa owalne lustra, w innej położyliśmy zielone płytki.',
+      'Trzy łazienki są wykonane w całkiem innych klimatach: w jednej z nich króluje marmur i mosiężna armatura, w kolejnej dąb i kamienne płytki, a jeszcze w następnej zielone płytki w połączeniu z piaskowym spiekiem i złotymi dodatkami. Pomimo różnorodności całość inwestycji jest spójna.',
     ],
     meta: [
       ['Typ', 'Dom jednorodzinny'],
       ['Pomieszczenia', 'Salon z kuchnią i jadalnią, hol ze schodami, łazienki na parterze i poddaszu'],
-      ['Materiały', 'Orzech, marmur, dąb, mosiądz, płytki rzemieślnicze'],
-      ['Zakres', 'Model 3D, 21 wizualizacji'],
+      ['Materiały', 'Orzech, marmur, dąb, mosiądz, płytki z imitacją kamienia'],
+      ['Powierzchnia', '78 m²'],
     ],
-    palette: [['#5e3b26', 'Orzech'], ['#ece7df', 'Marmur'], ['#b98d4f', 'Mosiądz'], ['#4d5a44', 'Butelkowa zieleń'], ['#cfc3b2', 'Len']],
-    labels: ['Salon z kominkiem', 'Jadalnia', 'Hol ze schodami', 'Jadalnia', 'Kuchnia', 'Kuchnia', 'Schody', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Łazienka', 'Łazienka na parterze', 'Strefa dzienna'],
+    labels: ['Salon z kominkiem', 'Jadalnia', 'Hol ze schodami', 'Kuchnia', 'Kuchnia', 'Kuchnia', 'Schody', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Łazienka', 'Łazienka na parterze', 'Strefa dzienna', 'Strefa dzienna', 'Łazienka', 'Hol', 'Kuchnia', 'Jadalnia z biblioteczką', 'Salon z kominkiem'],
   },
 ];
 
@@ -240,12 +235,10 @@ function openProject(id, fromHash) {
 
   $('#projectHero').src = img(p, 1);
   $('#projectHero').alt = `${p.title}: ${p.labels[0]}`;
-  $('#projectEyebrow').textContent = p.sub;
   $('#projectTitle').innerHTML = p.title.replace('&', '<em>&amp;</em>');
   $('#projectLead').textContent = p.lead;
   $('#projectDesc').innerHTML = p.desc.map((t) => `<p>${t}</p>`).join('');
   $('#projectMeta').innerHTML = p.meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
-  $('#projectPalette').innerHTML = p.palette.map(([c, n]) => `<span style="background:${c}"><small>${n}</small></span>`).join('');
   const kinds = layoutFor(p.n - 1);
   $('#projectGallery').innerHTML = kinds.map((k, j) => {
     const i = j + 2; const small = k === 't' || k === 'n' || k === 'h';
@@ -279,8 +272,6 @@ function openProject(id, fromHash) {
 
 function animateProjectHead() {
   if (!hasGsap || reduced) return;
-  gsap.fromTo(['#projectEyebrow', '#projectTitle', '#projectLead'], { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2, stagger: .09, ease: 'expo.out', delay: .45 });
-  gsap.fromTo('#projectPalette span', { scaleY: 0 }, { scaleY: 1, duration: 1, stagger: .07, ease: 'expo.out', delay: .9 });
 }
 
 function closeProject() {
@@ -496,7 +487,7 @@ function intro() {
     .to(o, { v: 82, duration: 1.4, ease: 'power2.inOut', onUpdate: () => (count.textContent = Math.round(o.v)) }, 0)
     .to('.preloader__bar span', { scaleX: .82, duration: 1.4, ease: 'power2.inOut' }, 0);
 
-  gsap.set('.hero__title .line > span, .hero__eyebrow .line > span', { yPercent: 115 });
+  gsap.set('.hero__title .line > span', { yPercent: 115 });
   gsap.set(['.hero__lead', '.hero__bottom .btn', '.hero__caption', '.nav'], { opacity: 0, y: 24 });
   gsap.set('.hero__media', { scale: 1.25 });
 
@@ -506,7 +497,6 @@ function intro() {
       .to('.preloader__bar span', { scaleX: 1, duration: .5 }, '<')
       .to(pre, { yPercent: -100, duration: 1.2, ease: 'expo.inOut', onComplete: () => pre.remove() }, '+=.1')
       .to('.hero__media', { scale: 1, duration: 2.2, ease: 'expo.out' }, '-=.75')
-      .to('.hero__eyebrow .line > span', { yPercent: 0, duration: 1.2, ease: 'expo.out' }, '-=1.9')
       .to('.hero__title .line > span', { yPercent: 0, duration: 1.4, stagger: .1, ease: 'expo.out' }, '-=1.8')
       .to(['.nav', '.hero__lead', '.hero__bottom .btn', '.hero__caption'], { opacity: 1, y: 0, duration: 1.2, stagger: .08, ease: 'expo.out' }, '-=1.1')
       .add(startHero, '-=1');
