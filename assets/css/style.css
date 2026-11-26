@@ -387,20 +387,110 @@ body::after {
 }
 
 /* ================= DUŻE EKRANY ================= */
-/* Treść nie rozjeżdża się na całą szerokość monitora, a tekst rośnie razem z ekranem. */
-@media (min-width: 1800px) {
-  .hero__lead, .section__lead, .wk__text, .step p, .card p,
-  .project__desc p, .project__meta dd { font-size: 19px; }
-  .project__desc p:first-child { font-size: 21px; }
-  .card li { font-size: 17px; }
-  .intro__text { max-width: 1400px; }
-  .section__lead { max-width: 560px; }
-  .hero__lead { max-width: 540px; }
-  .step p { max-width: 520px; }
-  .nav__links { font-size: 14px; }
-  .btn { font-size: 14px; padding: 19px 34px; }
-  .stat__label, .contact__small, .wk__sub, .footer { font-size: 15px; }
-  .stat__label { max-width: 220px; }
-  .wk__tags li, .project__meta dt, .pg figcaption { font-size: 13px; }
-  .nav__logo img { height: 40px; }
+/* Projekt jest rysowany pod ekran 1600 × 900. Powyżej 1700 px cała strona skaluje się
+   proporcjonalnie: 1 "piksel projektu" = --dp. Liczymy z szerokości i wysokości (mniejsza
+   wygrywa), żeby na monitorach ultrawide nic nie wychodziło poza wysokość ekranu. */
+@media (min-width: 1700px) {
+  :root {
+    --dp: max(1px, min(calc(100vw / 1600), calc(100vh / 900)));
+    --maxw: calc(1600 * var(--dp));
+    --pad: calc(72 * var(--dp));
+  }
+  body { font-size: calc(16 * var(--dp)); }
+  .section { padding: calc(170 * var(--dp)) var(--gut); }
+  .eyebrow { font-size: calc(12 * var(--dp)); margin-bottom: calc(28 * var(--dp)); gap: calc(14 * var(--dp)); }
+  .eyebrow::before { width: calc(34 * var(--dp)); }
+  .h2 { font-size: calc(112 * var(--dp)); }
+  .section__head { margin-bottom: calc(120 * var(--dp)); }
+  .section__lead { max-width: calc(500 * var(--dp)); margin-top: calc(32 * var(--dp)); font-size: calc(17 * var(--dp)); }
+
+  .btn { padding: calc(17 * var(--dp)) calc(30 * var(--dp)); font-size: calc(13 * var(--dp)); gap: calc(16 * var(--dp)); }
+  .arrow { width: calc(22 * var(--dp)); }
+  .btn:hover .arrow { width: calc(32 * var(--dp)); }
+  .preloader__logo, .preloader__bar { width: calc(440 * var(--dp)); }
+  .preloader__count { font-size: calc(15 * var(--dp)); }
+
+  .nav { padding-top: calc(22 * var(--dp)); padding-bottom: calc(22 * var(--dp)); }
+  .nav.is-scrolled { padding-top: calc(14 * var(--dp)); padding-bottom: calc(14 * var(--dp)); }
+  .nav__logo img { height: calc(34 * var(--dp)); }
+  .nav__links { gap: calc(38 * var(--dp)); font-size: calc(13 * var(--dp)); }
+  .nav__cta { padding: calc(13 * var(--dp)) calc(24 * var(--dp)); font-size: calc(12 * var(--dp)); }
+
+  .hero__content { padding-bottom: clamp(90px, 12vh, calc(140 * var(--dp))); }
+  .hero__title { font-size: calc(150 * var(--dp)); }
+  .hero__bottom { margin-top: calc(44 * var(--dp)); gap: calc(40 * var(--dp)); }
+  .hero__lead { max-width: calc(480 * var(--dp)); font-size: calc(17 * var(--dp)); }
+  .hero__caption { font-size: calc(12 * var(--dp)); gap: calc(18 * var(--dp)); }
+  .hero__progress { height: calc(90 * var(--dp)); }
+  .hero__scroll { font-size: calc(11 * var(--dp)); bottom: calc(26 * var(--dp)); }
+  .hero__scroll i { height: calc(46 * var(--dp)); }
+
+  .marquee { padding: calc(26 * var(--dp)) 0; }
+  .marquee__track { gap: calc(46 * var(--dp)); }
+  .marquee span, .marquee b { font-size: calc(54 * var(--dp)); }
+
+  .intro__text { font-size: calc(66 * var(--dp)); max-width: calc(1250 * var(--dp)); }
+  .stats { margin-top: calc(150 * var(--dp)); }
+  .stat { padding: calc(34 * var(--dp)) calc(24 * var(--dp)) 0 0; gap: calc(10 * var(--dp)); }
+  .stat + .stat { padding-left: calc(24 * var(--dp)); }
+  .stat__num { font-size: calc(100 * var(--dp)); }
+  .stat__label { font-size: calc(14 * var(--dp)); max-width: calc(200 * var(--dp)); }
+
+  .work { padding-bottom: calc(120 * var(--dp)); }
+  .work__list { gap: calc(220 * var(--dp)); }
+  .wk { column-gap: calc(32 * var(--dp)); }
+  .wk__thumbs { right: calc(18 * var(--dp)); bottom: calc(18 * var(--dp)); gap: calc(8 * var(--dp)); }
+  .wk__thumbs img { width: calc(74 * var(--dp)); height: calc(52 * var(--dp)); }
+  .wk__n { font-size: calc(18 * var(--dp)); margin-bottom: calc(18 * var(--dp)); }
+  .wk__title { font-size: calc(70 * var(--dp)); margin-bottom: calc(14 * var(--dp)); }
+  .wk__sub { font-size: calc(13 * var(--dp)); margin-bottom: calc(24 * var(--dp)); }
+  .wk__text { font-size: calc(17 * var(--dp)); margin-bottom: calc(26 * var(--dp)); }
+  .wk__tags { gap: calc(8 * var(--dp)); margin-bottom: calc(32 * var(--dp)); }
+  .wk__tags li { font-size: calc(12 * var(--dp)); padding: calc(6 * var(--dp)) calc(13 * var(--dp)); }
+  .wk__link { font-size: calc(13 * var(--dp)); gap: calc(14 * var(--dp)); }
+  .wk__link:hover { gap: calc(22 * var(--dp)); }
+
+  .process__intro { padding-bottom: calc(90 * var(--dp)); }
+  .process__pin { padding: calc(90 * var(--dp)) 0 calc(110 * var(--dp)); }
+  .process__track { gap: calc(44 * var(--dp)); }
+  .step { width: calc(544 * var(--dp)); gap: calc(30 * var(--dp)); }
+  .step__media--list li { font-size: calc(13 * var(--dp)); padding: calc(11 * var(--dp)) 0; }
+  .step__n { font-size: calc(18 * var(--dp)); }
+  .step h3 { font-size: calc(42 * var(--dp)); margin: calc(8 * var(--dp)) 0 calc(12 * var(--dp)); }
+  .step p { font-size: calc(17 * var(--dp)); max-width: calc(470 * var(--dp)); }
+  .process__progress { bottom: calc(70 * var(--dp)); }
+
+  .card { padding: calc(54 * var(--dp)); }
+  .card__n { font-size: calc(22 * var(--dp)); }
+  .card h3 { font-size: calc(44 * var(--dp)); margin: calc(50 * var(--dp)) 0 calc(14 * var(--dp)); }
+  .card p { font-size: calc(17 * var(--dp)); margin-bottom: calc(34 * var(--dp)); }
+  .card li { font-size: calc(15.5 * var(--dp)); padding: calc(13 * var(--dp)) 0; gap: calc(12 * var(--dp)); }
+
+  .contact__title { font-size: calc(160 * var(--dp)); }
+  .contact__links { gap: calc(22 * var(--dp)) calc(40 * var(--dp)); margin-top: calc(56 * var(--dp)); }
+  .contact__big { font-size: calc(56 * var(--dp)); }
+  .contact__small { font-size: calc(14 * var(--dp)); }
+
+  .footer { padding-top: calc(40 * var(--dp)); padding-bottom: calc(40 * var(--dp)); font-size: calc(13 * var(--dp)); }
+  .footer__logo { height: calc(30 * var(--dp)); }
+
+  .project__close, .lightbox__close, .lightbox__nav { width: calc(58 * var(--dp)); height: calc(58 * var(--dp)); top: calc(22 * var(--dp)); }
+  .lightbox__nav { top: 50%; font-size: calc(18 * var(--dp)); }
+  .project__close span, .lightbox__close span { left: calc(18 * var(--dp)); right: calc(18 * var(--dp)); }
+  .project__title { font-size: calc(176 * var(--dp)); }
+  .project__lead { font-size: calc(32 * var(--dp)); max-width: calc(760 * var(--dp)); margin-top: calc(28 * var(--dp)); }
+  .project__info { gap: calc(112 * var(--dp)); padding: calc(130 * var(--dp)) var(--gut); }
+  .project__desc p { font-size: calc(17 * var(--dp)); max-width: calc(680 * var(--dp)); margin-bottom: calc(22 * var(--dp)); }
+  .project__desc p:first-child { font-size: calc(19 * var(--dp)); }
+  .project__meta div { grid-template-columns: calc(140 * var(--dp)) 1fr; gap: calc(20 * var(--dp)); padding: calc(18 * var(--dp)) 0; }
+  .project__meta dt { font-size: calc(12 * var(--dp)); }
+  .project__meta dd { font-size: calc(17 * var(--dp)); }
+  .project__palette { padding: 0 var(--gut); margin-bottom: calc(100 * var(--dp)); }
+  .project__palette span { height: calc(90 * var(--dp)); }
+  .project__palette span small { font-size: calc(10 * var(--dp)); bottom: calc(-26 * var(--dp)); }
+  .project__gallery { gap: calc(24 * var(--dp)); }
+  .pg figcaption { font-size: calc(12 * var(--dp)); left: calc(16 * var(--dp)); bottom: calc(14 * var(--dp)); padding: calc(6 * var(--dp)) calc(11 * var(--dp)); }
+  .project__next { padding: calc(200 * var(--dp)) var(--gut); margin-top: calc(140 * var(--dp)); }
+  .project__next strong { font-size: calc(144 * var(--dp)); }
+  .lightbox figcaption { font-size: calc(12 * var(--dp)); }
 }
