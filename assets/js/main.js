@@ -51,7 +51,7 @@ const PROJECTS = [
       ['Materiały', 'Dąb naturalny, kamień, tapeta ścienna, LED liniowy'],
       ['Powierzchnia', '100 m²'],
     ],
-    labels: ['Kuchnia z wyspą', 'Kuchnia', 'Salon', 'Strefa wypoczynku', 'Strefa dzienna', 'Przedpokój', 'Kuchnia', 'Sypialnia', 'Pokój dziewczynki', 'Łazienka', 'Pokój dziewczynki', 'Łazienka', 'Pokój dziewczynki', 'Pokój dziewczynki', 'Pokój chłopca', 'Pokój chłopca'],
+    labels: ['Kuchnia z wyspą', 'Kuchnia', 'Salon', 'Strefa wypoczynku', 'Strefa dzienna', 'Przedpokój', 'Kuchnia', 'Sypialnia', 'Pokój dziewczynki', 'Łazienka', 'Łazienka', 'Pokój dziewczynki', 'Pokój dziewczynki', 'Pokój dziewczynki', 'Pokój chłopca', 'Pokój chłopca'],
   },
   {
     id: 'black-edition', dir: 'p3', n: 12,
@@ -74,7 +74,7 @@ const PROJECTS = [
     labels: ['Kuchnia', 'Salon', 'Kuchnia', 'Salon z biokominkiem', 'Kuchnia', 'Przedpokój', 'Sypialnia', 'Garderoba', 'Sypialnia', 'Łazienka', 'Łazienka', 'Salon'],
   },
   {
-    id: 'boho', dir: 'boho', n: 16,
+    id: 'boho', dir: 'boho', n: 15,
     title: 'Dom Boho',
     sub: 'Dom · rustykalne akcenty',
     lead: 'Rattan, len, parkiet w jodełkę i kominek w salonie.',
@@ -91,7 +91,7 @@ const PROJECTS = [
       ['Materiały', 'Dąb, rattan, len, parkiet w jodełkę, płytki z imitacją kamienia'],
       ['Powierzchnia', '78 m²'],
     ],
-    labels: ['Salon', 'Kuchnia z wyspą', 'Kuchnia z kominkiem', 'Jadalnia', 'Sypialnia', 'Jadalnia', 'Salon', 'Łazienka', 'Łazienka', 'Łazienka', 'Wiatrołap', 'Salon', 'Łazienka na poddaszu', 'Łazienka', 'Łazienka na poddaszu', 'Łazienka na poddaszu'],
+    labels: ['Salon', 'Kuchnia z wyspą', 'Kuchnia z kominkiem', 'Jadalnia', 'Sypialnia', 'Jadalnia', 'Salon', 'Łazienka', 'Łazienka', 'Wiatrołap', 'Salon', 'Łazienka na poddaszu', 'Łazienka na parterze', 'Łazienka na poddaszu', 'Łazienka na poddaszu'],
   },
   {
     id: 'modern-classic', dir: 'mc', n: 12,
@@ -111,10 +111,10 @@ const PROJECTS = [
       ['Materiały', 'Orzech, lamele, imitacja kamienia, czarna armatura, światło LED'],
       ['Powierzchnia', '34 m²'],
     ],
-    labels: ['Jadalnia', 'Salon', 'Strefa dzienna', 'Jadalnia', 'Jadalnia', 'Kuchnia', 'Przedpokój', 'Łazienka', 'Łazienka', 'Łazienka', 'Salon z kuchnią', 'Łazienka'],
+    labels: ['Jadalnia', 'Salon', 'Strefa dzienna', 'Jadalnia', 'Jadalnia', 'Kuchnia', 'Salon', 'Łazienka', 'Łazienka', 'Łazienka', 'Salon z kuchnią', 'Łazienka'],
   },
   {
-    id: 'modern-farmhouse', dir: 'mf', n: 18,
+    id: 'modern-farmhouse', dir: 'mf', n: 19,
     title: 'Modern Farmhouse',
     sub: 'Dom · nowoczesna wieś',
     lead: 'Orzechowe fronty, marmur, drewniane schody i kominek z niszą na drewno.',
@@ -131,7 +131,7 @@ const PROJECTS = [
       ['Materiały', 'Orzech, marmur, dąb, mosiądz, płytki z imitacją kamienia'],
       ['Powierzchnia', '78 m²'],
     ],
-    labels: ['Salon z kominkiem', 'Jadalnia', 'Hol ze schodami', 'Kuchnia', 'Kuchnia', 'Kuchnia', 'Schody', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Łazienka', 'Łazienka na parterze', 'Strefa dzienna', 'Strefa dzienna', 'Łazienka', 'Hol', 'Kuchnia', 'Jadalnia z biblioteczką', 'Salon z kominkiem'],
+    labels: ['Salon z kominkiem', 'Jadalnia', 'Hol ze schodami', 'Kuchnia', 'Kuchnia', 'Kuchnia', 'Schody', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Łazienka na parterze', 'Strefa dzienna', 'Strefa dzienna', 'Łazienka na poddaszu', 'Łazienka na poddaszu', 'Hol', 'Kuchnia', 'Jadalnia z biblioteczką', 'Salon z kominkiem'],
   },
 ];
 
